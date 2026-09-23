@@ -1,1 +1,52 @@
 # Simply copy and paste the output from your terminal here!
+[liangcal@login-students ~]$ cd ~
+[liangcal@login-students ~]$ mkdir playground
+[liangcal@login-students ~]$ whoami
+liangcal
+[liangcal@login-students ~]$ pwd
+/home/liangcal
+[liangcal@login-students ~]$ printf "Patriots\nChiefs\nBills\nEagles\nCowboys\nPacker\n" > teams.txt
+[liangcal@login-students ~]$ mv teams.txt playground/
+[liangcal@login-students ~]$ cd playground
+[liangcal@login-students playground]$ ls
+teams.txt
+[liangcal@login-students playground]$ cat teams.txt
+Patriots
+Chiefs
+Bills
+Eagles
+Cowboys
+Packer
+[liangcal@login-students playground]$ sort teams.txt
+Bills
+Chiefs
+Cowboys
+Eagles
+Packer
+Patriots
+[liangcal@login-students playground]$ grep "s$" teams.txt
+Patriots
+Chiefs
+Bills
+Eagles
+Cowboys
+[liangcal@login-students playground]$ grep "Pa" teams.txt
+Patriots
+Packer
+[liangcal@login-students playground]$ cp teams.txt teams_backup.txt
+[liangcal@login-students playground]$ touch playbook.txt
+[liangcal@login-students playground]$ ls
+playbook.txt  teams_backup.txt  teams.txt
+[liangcal@login-students playground]$ mv playbook.txt gameplan.txt
+[liangcal@login-students playground]$ ls
+gameplan.txt  teams_backup.txt  teams.txt
+[liangcal@login-students playground]$ printf "Brady,QB,7\nGronk, TE,4\nEdelman,WR,3\n" > roster.csv
+[liangcal@login-students playground]$ cut -d',' -f1,3 roster.csv
+Brady,7
+Gronk,4
+Edelman,3
+[liangcal@login-students playground]$ ps
+    PID TTY          TIME CMD
+4107254 pts/30   00:00:00 bash
+4112835 pts/30   00:00:00 ps
+[liangcal@login-students playground]$
